@@ -76,7 +76,9 @@ while user_want=='y':
     if game_state=='play':
         print(f"Your cards: {user_cards}, final score: {user_score}")
         print(f"Computer cards: {computer_cards}, final score: {computer_score}")
-        if user_score>computer_score:
+        if user_score==computer_score:
+            print("draw!!!!!!!")
+        elif user_score>computer_score:
             print("You Won!!!!!!!!!!!!!!!!!!")
         else:
             print("Computer Won!!!!!!!!!!!!!!")
